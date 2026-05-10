@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Chrome Interfacce </title>
+    <link rel="shortcut icon" href="Chrome.png" type="image/x-icon">
+    <style>
+        *{
+           margin: 0;
+           padding: 0; 
+        }
+
+        body{
+            text-align: center;
+        }
+
+        #chrome{
+            width: 150px;
+            height: 150px;
+        }
+
+        #upper-texts{
+            margin-left: 150px;
+            margin-right: 150px;
+            font-size: 30px;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p{
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .main{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .sub-main{
+            width: 250px;
+            height: 265px;
+            background-color: black;
+            border-radius: 7px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        button{
+            margin-left: 230px;
+            margin-top: 10px;
+            background-color: transparent;
+            border: none;
+        }
+
+        button a{
+            font-size: 15px;
+            
+        }
+
+        #menu{
+            width: 8px;
+            height: 20px;
+            color: none;
+        }
+
+        #myOptions{
+            display: none;
+            flex-wrap:  wrap;
+            width: 120px;
+            background-color: white;
+            position: absolute;
+            bottom: 260px;
+            left: 350px;
+        }
+
+        #myOptions ul{
+            list-style: none;
+        }
+
+        #myOptions li a{
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 25px;
+            justify-content: center;
+        }
+
+        #myOptions li a img{
+            width: 20%;
+            height: 20px;
+        }
+
+        #myOptions li a p{
+            font-size: 25px;
+            margin-left: 10px;
+        }
+
+        #myOptions-1{
+            display: none;
+            flex-wrap:  wrap;
+            width: 120px;
+            background-color: white;
+            position: absolute;
+            bottom: 260px;
+            left: 620px;
+        }
+
+        #myOptions-1 ul{
+            list-style: none;
+        }
+
+        #myOptions-1 li a{
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 25px;
+            justify-content: center;
+        }
+
+        #myOptions-1 li a img{
+            width: 20%;
+            height: 20px;
+        }
+
+        #myOptions-1 li a p{
+            font-size: 25px;
+            margin-left: 10px;
+        }
+
+        .circle{
+            width: 47%;
+            height: 47%;
+            background-color: gray;
+            border-radius: 100%;
+            margin-left: 70px;
+            margin-top: 20px;
+        }
+
+        .sub-main b{
+            font-size: 20px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .circle b{
+            font-size: 80px;
+            color: white;
+            position: relative;
+            top: 20px;
+        }
+
+        .circle img{
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+        }
+
+
+        @media screen and (min-width: 350px) and (max-width: 1320px) {
+
+            h1{
+                font-size: 25px;
+            }
+
+            #chrome{
+            width: 50px;
+            height: 50px;
+            }
+
+            #upper-texts{
+                margin-left: 50px;
+                margin-right: 50px;
+                font-size: 18px;
+            }
+
+            .main{
+                overflow-y: scroll;
+                width: 90%;
+                height: 50vh;
+            }
+
+            #menu{
+                display: none;
+            }
+
+            #myOptions{
+                display: none;
+                flex-wrap:  wrap;
+                width: 120px;
+                background-color: white;
+                position: absolute;
+                bottom: 370px;
+                left: 150px;
+            }
+
+            #myOptions-1{
+                display: none;
+                flex-wrap:  wrap;
+                width: 120px;
+                background-color: white;
+                position: absolute;
+                bottom: 370px;
+                left: 150px;
+            }
+                
+        }
+    </style>
+</head>
+<body>
+    <br><br>
+    <img src="Chrome.png" id="chrome">
+    <br>
+    <h1> Who's using Chrome? </h1>
+    <br>
+    <p id="upper-texts"> 
+        With Chrome profiles, you can separate all your Chrome stuff. Create
+        profiles for friends and family or split between work and fun.
+    </p>
+    <br>
+    <div class="main">
+        <div class="sub-main" style="background-color: rgb(54, 53, 53);">
+            <button onclick="content()"> 
+                <a href="#"> <img src="Menu.png" id="menu"> </a>
+            </button>
+                <div id="myOptions">
+                    <ul>
+                        <li> 
+                            <a href="#">
+                                <img src="Edit.png" alt=""> 
+                                <p> Edit </p>
+                            </a> 
+                        </li>
+                        <li> 
+                            <a href="#"> 
+                                <img src="Delete.png" alt="">
+                                <p> Delete </p>
+                            </a> 
+                        </li>
+                    </ul>
+                </div>
+            <br>
+            <b> Code </b>
+            <div class="circle" style="background-color: rgb(41, 44, 223);">
+                <b> C </b>
+            </div>
+            <br><br>
+            <b> Code Wave I.T </b>
+        </div>
+        <div class="sub-main">
+            <button onclick="content_1()">
+                <a href="#"> <img src="Menu.png" id="menu"> </a>
+                <div id="myOptions-1">
+                    <ul>
+                        <li> 
+                            <a href="#">
+                                <img src="Edit.png" alt=""> 
+                                <p> Edit </p>
+                            </a> 
+                        </li>
+                        <li> 
+                            <a href="#"> 
+                                <img src="Delete.png" alt="">
+                                <p> Delete </p>
+                            </a> 
+                        </li>
+                    </ul>
+                </div>
+            </button>
+            <br>
+            <b> Your Chrome </b>
+            <div class="circle" style="background-color: skyblue;">
+                <a href="#">
+                    <img src="Me.jpg" alt="">
+                </a>
+            </div>
+            <br><br>
+            <b> Moifelay Moussa Sheriff </b>
+        </div>
+        <div class="sub-main" style="background-color: rgb(170, 162, 162); border: 3px dotted black;">
+            <br><br><br>
+            <h2> <a href="#" style="color: white;"> Add </a> </h2>
+            <div class="circle" style="background-color: rgb(236, 230, 230);">
+                <a href="#"> <img src="Plus.png"> </a>
+            </div>
+        </div> 
+        
+    </div>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> About Me </title>
+    <link rel="shortcut icon" href="About.png" type="image/x-icon">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .main{
+            display: flex;
+            justify-content: center;
+        }
+
+        .main-left{
+            width: 40%;
+        }
+
+        .main-left img{
+            width: 90%;
+        }
+
+        .main-right{
+            width: 60%; 
+        }
+
+        .main-right h2{
+            font-size: 30px;
+            color: green;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .main-right label{
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .main-right b{
+            font-size: 25px;
+            margin: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .upper-main{
+            display: none;
+        }
+
+        @media screen and (min-width: 270px) and (max-width: 570px) {
+
+            .upper-main{
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .main{
+                display: block;
+            }
+
+            .upper-left{
+                width: 100%;
+                text-align: center;
+            }
+
+            .upper-left img{
+                width: 100px;
+                height: 100px;
+                border-radius: 100%;
+            }
+
+            .upper-right{
+                width: 100%;
+                margin-left: 20px;
+            }
+
+            .upper-right b{
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .upper-right label{
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .upper-right a{
+                text-decoration: none;
+            }
+
+            .main-left{
+                display: none;
+            }
+
+            .main-right{
+                width: 100%;
+            }
+
+            .main-right h2{
+                margin-left: 20px;
+            }
+
+            .main-right label{
+                font-size: 15px;
+                margin-left: 20px;
+            }
+
+            .main-right b{
+                font-size: 18px;
+            }
+
+            #email{
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="main-left">
+            <img src="sheriff.png" alt="">
+        </div>
+        <div class="upper-main">
+            <div class="upper-left"> 
+                <img src="cover img.png" alt="">
+            </div>
+            <div class="upper-right"> 
+                <b> Name: </b>
+                <label> Moifelay Moussa Sheriff </label>
+                <br>
+                <b> Contacts </b>
+                <label> +233264262543 / +233533480202 </label>
+                <br>
+                <b> Emails: </b>
+                <label> <a href="mailto:sheriffmoifelay7@gmail.com"> sheriffmoifelay7@gmail.com </a> </label>
+                <br>
+                <b> Freelance: </b>
+                <label> Available </label>
+            </div>
+        </div>
+        <br>
+        <div class="main-right"> <br>
+            <h2> My Personnal Information: </h2>
+            <label> First Name: </label> <b> Moifelay </b> <br>
+            <label> Middle Name: </label> <b> Moussa </b> <br>
+            <label> Last Name: </label> <b> Sheriff </b> <br>
+            <label> Gender Type: </label> <b> Male </b> <br>
+            <label> Nationality: </label> <b> Liberian </b> <br>
+            <label> Marital Status: </label> <b> Married </b> <br>
+            <label> Spoken Language </label> <b> English </b> <br>
+            <label> Educational Level: </label> <b> Technical Student </b> <br>
+            <label> Religion of Faith: </label> <b> Islam </b> <br>
+            <label> Ethnicity </label> <b> Mandingo </b> <br>
+            <br><br>
+            <h2> My Contact Information: </h2>
+            <label> Mobile Number: </label> <b> +233 264 262 543 </b> <br>
+            <label> Fax Number: </label> <b> +233 533 480 202 </b> <br>
+            <label> WhatsApp Number 1: </label> <b> +233 264 262 543 </b> <br>
+            <label> WhatsApp Number 2: </label> <b> +233 533 480 202 </b> <br>
+            <label> Main Mailing Addredd: </label> <b id="email"> sheriffmoifelay7@gmail.com </b> <br>
+            <label> Fax Mailing Addredd: </label> <b id="email"> khalifahsheriff7@gmail.com </b> <br>
+        </div>
+    </div>
+    <br><br>
+</body>
+</html>

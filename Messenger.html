@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Messenger </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .mobile-interface1{
+            border: 2px solid black;
+            width: 330px;
+            height: 600px;
+            border-radius: 35px;
+            margin: 10px;
+            background-color: rgb(238, 235, 235);
+        }
+
+        .mobile-interface2{
+            border: 2px solid black;
+            width: 330px;
+            height: 600px;
+            border-radius: 35px;
+            margin: 10px;
+            margin-top: 80px;
+            background-color: rgb(238, 235, 235);
+        }
+
+        .mobile-interface3{
+            border: 2px solid black;
+            width: 330px;
+            height: 600px;
+            border-radius: 35px;
+            margin: 10px;
+            margin-top: 140px;
+            background-color: rgb(238, 235, 235);
+        }
+
+
+        .mobile-interface1 select{
+            padding: 10px;
+            margin-left: 110px;
+            border: none;
+            background: transparent;
+        }
+
+        #first-input{
+            padding: 15px;
+            padding-right: 115px;
+            margin-left: 15px;
+            border: 1px solid gray;
+            border-radius: 12px;
+            background: transparent;
+        }
+
+
+        #log-in{
+            padding: 15px;
+            font-size: 15px;
+            width: 300px;
+            margin-left: 15px;
+            border: none;
+            border-radius: 30px;
+            color: white;
+            background-color: rgb(37, 37, 230);
+        }
+
+        #forgot-password{
+            text-decoration: none;
+            color: black;
+            margin-left: 100px;
+            font-size: 18px;
+        }
+
+        #second-button{
+            padding: 12px;
+            font-size: 18px;
+            width: 300px;
+            color: royalblue;
+            margin-left: 15px;
+            border: 2px solid royalblue;
+            border-radius: 30px;
+            background-color: transparent;
+        }
+
+        #first-bold{
+            font-size: 25px;
+            margin-left: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #second-bold{
+            font-size: 15px;
+            margin-left: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #second-input1{
+            width: 120px;
+            margin-left: 15px;
+            padding: 12px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            background: transparent;
+        }
+
+        #second-input2{
+            width: 120px;
+            margin-left: 5px;
+            padding: 12px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            background: transparent;
+        }
+
+        #next{
+            padding: 15px;
+            font-size: 15px;
+            width: 300px;
+            color: white;
+            margin-left: 15px;
+            border: none;
+            border-radius: 30px;
+            background-color: rgb(29, 29, 218);
+        }
+
+        .mobile-interface p{
+            margin-top: 330px;
+        }
+
+        #find-my-account{
+            text-decoration: none;
+            color: royalblue;
+            margin-left: 100px;
+            font-size: 18px;
+        }
+
+        #third-input{
+            width: 260px;
+            margin-left: 15px;
+            padding: 15px;
+            border: 1px solid gray;
+            border-radius: 7px;
+            background: transparent;
+        }
+
+        #continue{
+            padding: 15px;
+            font-size: 15px;
+            width: 300px;
+            color: white;
+            margin-left: 15px;
+            border: none;
+            border-radius: 30px;
+            background-color: rgb(28, 28, 214);
+        }
+
+        #search-by-email{
+            text-decoration: none;
+            color: black;
+            margin-left: 70px;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main"> 
+        <div class="mobile-interface1"> <br><br><br><br>
+            <select name="" id="">
+                <option value=""> English (US) </option>
+                <option value=""> French </option>
+                <option value=""> Spanish </option>
+            </select>
+            <br><br><br>
+            <img src="Messenger.png" style="margin-left: 110px; width: 120px;">
+            <br><br><br>
+            <input type="text" id="first-input" placeholder="Mobile number or email">
+            <br><br>
+            <input type="password" id="first-input" placeholder="Password">
+            <br><br>
+            <a href=""> <button id="log-in"> Log in  </button> </a>
+            <br><br>
+            <a href="" id="forgot-password"> Forgot password? </a>
+            <br><br><br><br>
+            <a href="#second"> <button id="second-button"> Create new account </button> </a>
+
+        </div>
+        <div class="mobile-interface2" id="second">
+            <br><br>
+            <b id="first-bold"> What's your name? </b>
+            <br><br>
+            <b id="second-bold"> Enter the name you use in real life.</b>
+            <br><br>
+            <input type="text" id="second-input1" placeholder="First name">
+            <input type="text" id="second-input2" placeholder="Last name">
+            <br><br>
+            <a href=""> <button id="next"> Next </button> </a>
+            <p>
+                <a href="#third" id="find-my-account"> Find my account </a>
+            </p>
+        </div>
+        <div class="mobile-interface3" id="third">
+            <br><br>
+            <b id="first-bold"> Find your account </b>
+            <br><br>
+            <b id="second-bold"> Enter your mobile number. </b>
+            <br><br>
+            <input type="text" id="third-input" placeholder="Mobile number">
+            <br><br>
+            <a href=""> <button id="continue"> Continue </button> </a>
+            <br><br>
+            <a href="" id="search-by-email"> Search by email instead </a>
+
+        </div>
+    </div>
+    
+</body>
+</html>

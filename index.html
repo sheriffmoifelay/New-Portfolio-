@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Portfolio </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon" href="Sheriff.jpg" type="image/x-icon">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        nav{
+            height: 60px;
+            text-align: center;
+        }
+
+        nav li{
+            display: inline-block;
+            margin: 10px;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+        }
+
+        .navbar-brand{
+            font-size: 30px;
+        }
+
+        .navbar-brand b{
+            color: blue;
+        }
+
+        .navbar-nav{
+            margin-left: 200px;
+        }
+
+        .main{
+            display: flex;
+            justify-content: center;
+        }
+
+        .sub-main-1{
+            width: 40%;
+        }
+
+        .sub-main-1 img{
+            width: 90%;
+            height: 100vh;
+        }
+
+        .sub-main-2{
+            width: 60%;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        #name{
+            color: red;
+        }
+
+        .sub-main-2 p{
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container-main{
+            display: flex;
+            justify-content: center;
+        }
+
+        .container{
+            width: 40px;
+            height: 40px;
+            margin: 10px;
+            border: 1px solid blue;
+            border-radius: 100%;
+        }
+
+        .container i{
+            font-size: 28px;
+            margin-top: 5px;
+            margin-left: -6px;
+            transition: 1s;
+        }
+
+        .container i:hover{
+            transform: scale(1.1);
+        }
+
+        #ist{
+            color: rgb(209, 72, 72);  
+        }
+
+
+        button{
+            width: 250px;
+            height: 50px;
+            background-color: blue;
+            border: none;
+            border-radius: 15px;
+        }
+
+        button a{
+            text-decoration: none;
+            font-size: 25px;
+            color: white;
+        }
+
+
+
+        @media screen and (min-width: 270px) and (max-width: 540px) {
+            nav{
+                height: 80px;
+            }
+            
+            .navbar-brand{
+                font-size: 20px;
+            }
+
+            nav li{
+                margin: 5px;
+            }
+
+            .navbar-toggler{
+                width: 60px;
+            }
+            
+            .navbar-nav{
+                margin-left: 0;
+                display: inline-block;
+            }
+
+            .nav-item a{
+                font-size: 15px;
+            }
+
+            .main{
+                display: block;
+            }
+
+            .sub-main-1{
+                width: 100%;
+            }
+
+            .sub-main-1 img{
+                width: 100%;
+                margin-top: 80px;
+            }
+
+            .sub-main-2{
+                width: 100%;
+            }
+            
+        }
+
+        @media screen and (min-width: 541px) and (max-width: 1000px){
+            nav{
+                height: 85px;
+            }
+            .sub-main-1{
+                width: 40%;
+            }
+
+            .sub-main-2{
+                width: 60%;
+            }
+
+            .navbar-nav{
+                margin-left: 0;
+            }
+        }
+
+        @media screen and (min-width: 1001px) and (max-width: 1080px){
+            nav{
+                height: 88px;
+            }
+
+            .navbar-nav{
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://sheriffmoifelay.github.io/my-portfolio-/"> <b> SHERIFF's Portfolio </b> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"> Home </a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="service.html"> Services </a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="project.html"> Projects </a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" href="My Resume.pdf"> Resume </a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" href="coverletter.html"> Cover Letter </a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" href="About.html"> About Me </a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+<div class="main">
+    <div class="sub-main-1">
+        <img src="sheriff.png" alt="">
+    </div>
+    <div class="sub-main-2">  
+        <h1> My Name is <spam id="name"> SHERIFF </spam> </h1>
+        <h2> I am a <span style="color: red;" class="display"></span> </h2> 
+        <p> This is a detailed portfolio of my projects and services. </p> <br>
+        <p> I am a passionate and ready to do task type of person. </p> <br> 
+        <p> Click on the button below to hire me. </p> <br>
+        <div class="container-main">
+            <div class="container">
+                <a href="https://www.facebook.com/moifelaymousamamaikonfofanasheriff">
+                    <i class="fa-brands fa-facebook" ></i>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.instagram.com/@khalifah_i.e_successor">
+                    <i class="fa-brands fa-instagram" id="ist"></i>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.linkedin.com/in/moifelay-moussa-sheriff-91867a172">
+                    <i class="fa-brands fa-linkedin" ></i>
+                </a>
+            </div>
+            <div class="container">
+                <a href="https://www.twitter.com/@MoifelayMSherif">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </div>
+        </div>
+        <br>
+        <button>
+            <a href="mailto:sheriffmoifelay7@gmail.com"> Hire Me </a>
+        </button>
+    </div>
+</div>
+<br><br>
+
+
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        let typed = new Typed('.display',{
+            strings : ['Web Developer', 'Freelancer', 'Software Engineer', 'Typist', 'Sales Specialist'],
+            typeSpeed : 100,
+            backSpeed : 150,
+            looped : true
+        })
+    </script>
+</body>
+</html>
