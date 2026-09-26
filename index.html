@@ -6,7 +6,7 @@
     <title> My Portfolio </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="shortcut icon" href="KEL Logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="Sheriff.jpg" type="image/x-icon">
     <style>
         *{
             margin: 0;
@@ -39,6 +39,10 @@
 
         .navbar-nav{
             margin-left: 200px;
+        }
+    
+        .mobile{
+            display: none;
         }
 
         .main{
@@ -112,12 +116,16 @@
             font-size: 25px;
             color: white;
         }
+    
+        #whatsapp{
+            width: 100%;
+        }
 
 
 
         @media screen and (min-width: 270px) and (max-width: 540px) {
             nav{
-                height: 80px;
+                height: 100%;
             }
             
             .navbar-brand{
@@ -127,6 +135,10 @@
             nav li{
                 margin: 5px;
             }
+            
+            nav-item a{
+                font-size: 220%;
+            }
 
             .navbar-toggler{
                 width: 60px;
@@ -134,12 +146,28 @@
             
             .navbar-nav{
                 margin-left: 0;
-                display: inline-block;
             }
 
             .nav-item a{
                 font-size: 15px;
             }
+            
+            .mobile{
+                display: block;          
+            }
+            
+            .sub-main-1{
+                text-align: center;
+            }
+            
+            .sub-main-1 img{
+                width: 90%;
+                height: 100%;
+            }
+            
+            .pc{
+                display: none;  
+            }     
 
             .main{
                 display: block;
@@ -151,7 +179,6 @@
 
             .sub-main-1 img{
                 width: 100%;
-                margin-top: 80px;
             }
 
             .sub-main-2{
@@ -207,7 +234,7 @@
                 <a class="nav-link active" aria-current="page" href="project.html"> Projects </a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link active" href="resume.html"> Resume </a>
+                <a class="nav-link active" href="My Resume.pdf"> Resume </a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link active" href="coverletter.html"> Cover Letter </a>
@@ -221,11 +248,12 @@
     </nav>
 <div class="main">
     <div class="sub-main-1">
-        <img src="Engineer 1.png" alt="">
+        <img src="Engineer 1.png" alt="" class="pc">
+        <img src="cover img.png" alt="" class="mobile">
     </div>
     <div class="sub-main-2">  
         <h1> My Name is <spam id="name"> SHERIFF </spam> </h1>
-        <h2> I am <span style="color: blue;" class="display"></span> </h2> 
+        <h2> I am a <span style="color: red;" class="display"></span> </h2> 
         <p> This is a detailed portfolio of my projects and services. </p> <br>
         <p> I am a passionate and ready to do task type of person. </p> <br> 
         <p> Click on the button below to hire me. </p> <br>
@@ -258,20 +286,18 @@
     </div>
 </div>
 <br><br>
-
-
+   
+      
     
-
     <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script>
         let typed = new Typed('.display',{
-            strings : ['a Website Developer', 'a Graphic Designer', 'a Software Engineer', 'a Freelancer', 'a Visual Assistant', 'an Administrator', 'a Personal Secretary', 'a Typist', 'a Sales Developement Specialist'],
+            strings : ['Web Developer', 'Freelancer', 'Software Engineer', 'Typist', 'Sales Specialist'],
             typeSpeed : 100,
-            backSpeed : 180,
+            backSpeed : 150,
             looped : true
         })
     </script>
-    
 </body>
 </html>
